@@ -1,14 +1,15 @@
+/* Body background: black → purple → dark blue gradient */
 body {
   font-family: Arial, sans-serif;
-  background: #111;
+  background: linear-gradient(180deg, #000000 0%, #4b0082 50%, #001f4d 100%);
   color: #eee;
   max-width: 800px;
   margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
+  padding: 20px;
 }
 
 h1 {
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -22,16 +23,7 @@ h1 {
 .row {
   display: flex;
   align-items: center;
-  padding: 8px 12px;
-  border-radius: 6px;
-  justify-content: center;
   gap: 12px;
-}
-
-.row .label {
-  width: 100px;
-  text-align: right;
-  font-weight: bold;
 }
 
 .row input {
@@ -42,27 +34,28 @@ h1 {
   font-size: 14px;
 }
 
+.row .instruction {
+  font-size: 14px;
+  color: #ccc;
+  white-space: nowrap;
+}
+
 .row button.copy-btn {
   padding: 6px 12px;
   border: none;
   border-radius: 4px;
-  background: #555;
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
   cursor: pointer;
 }
 
 .row button.copy-btn:hover {
-  background: #777;
+  background: rgba(255, 255, 255, 0.2);
 }
-
-/* color theme */
-.black { background: #000; }
-.purple { background: #4b0082; }
-.darkblue { background: #001f4d; }
 
 .instructions {
   text-align: left;
-  background: #222;
+  background: rgba(255, 255, 255, 0.05);
   padding: 16px;
   border-radius: 8px;
 }
