@@ -1,11 +1,13 @@
-/* Body background: black → purple → dark blue gradient */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #000000 0%, #4b0082 50%, #001f4d 100%);
-  color: #eee;
-  max-width: 800px;
-  margin: 40px auto;
+  /* Full-screen gradient */
+  min-height: 100vh;
+  margin: 0;
   padding: 20px;
+
+  background: linear-gradient(180deg, #000000 0%, #4b0082 50%, #001f4d 100%);
+  background-attachment: fixed; /* Keeps gradient steady when scrolling */
+  color: #eee;
 }
 
 h1 {
