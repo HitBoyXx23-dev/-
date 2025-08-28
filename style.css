@@ -42,6 +42,19 @@ h1 {
   font-size: 14px;
 }
 
+.row button.copy-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+.row button.copy-btn:hover {
+  background: #777;
+}
+
 /* color theme */
 .black { background: #000; }
 .purple { background: #4b0082; }
